@@ -19,9 +19,8 @@
             <li><a href="#main">Home</a></li>
             <li><a href="#skills">My Skills</a></li>
             <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">My Portfolio</a></li>
         </ul>
-        <!-- <button>Contact Me</button> -->
         <button id="menuButton" onclick="openMenu()">
             <i class="fa-solid fa-bars"> MENU</i>
         </button>
@@ -29,62 +28,47 @@
 
     <div class="main" id="main">
         <div class="left">
-            <h3>I am <span>웹 개발자</span> 이도현</h3>
+            <h3>Im <span>웹 개발자</span> 이도현</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                tristique.
+                "팀원들과의 협업을 통해, 더 나은 코드를 구현합니다."
             </p>
-            <button>Get In Touch</button>
+            <p>
+                "사용자의 입장에서 생각하여 직관적이고 효율적인 디자인을 구현합니다."
+            </p>
+            <p>
+                "진정성 있는 발전으로 꾸준히 성장하는 개발자입니다."
+            </p>
         </div>
+        <!-- 이미지 -->
         <div class="right">
             <img src="assets/fi.png" alt="">
         </div>
     </div>
 
     <div class="skills" id="skills">
-        <h3>My Skills</h3>
+        <h3>My Skill</h3>
         <div class="skill-items">
             <div class="item">
+                <h4>능숙히 사용하는</h4>
                 <div class="icon">
                     <img src="./assets/html.svg" alt="">
                     <img src="./assets/css.svg" alt="">
                     <img src="./assets/js.png" alt="">
                 </div>
-                <h4>능숙히 사용하는</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.
+                    
                 </p>
             </div>
             <div class="item">
+                <h4>능숙하진 않지만</h4>
                 <div class="icon">
                     <img src="./assets/vue.png" alt="">
                     <img src="./assets/react.svg" alt="">
                     <img class="img2" src="./assets/jquery.png" alt="">
                     <img class="img2" src="./assets/firebase.svg" alt="">
                 </div>
-                <h4>능숙하진 않지만</h4>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.
-                </p>
-            </div>
-            <!-- <div class="item">
-                <div class="icon"><i class='bx bxl-figma'></i></i></div>
-                <h4>사용해봤지만</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.
-                </p>
-            </div> -->
-            <div class="item">
-                <div class="icon">
-                    <img src="./assets/next.png" alt="">
-                </div>
-                <h4>배워보고 싶은</h4>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-                    tristique.
+
                 </p>
             </div>
         </div>
@@ -93,15 +77,35 @@
     <div class="about" id="about">
         <div class="right">
             <h3>About Me</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet
-                augue. Nibh metus a semper purus mauris duis. Lorem eu neque, tristique quis duis. Nibh scelerisque ac
-                adipiscing velit non nulla in amet pellentesque.
-            </p>
-            <p>
-                Sit turpis pretium eget maecenas. Vestibulum dolor mattis consectetur eget commodo vitae. Amet
-                pellentesque sit pulvinar lorem mi a, euismod risus r.
-            </p>
+            <div class="about_container">
+                <span class="about_left">
+                    <p>이름 : </p>
+                    <p class="about_content_bottom">이도현</p>
+                </span>
+                <span class="about_left">
+                    <p>생년월일 : </p>
+                    <p class="about_content_bottom">97.07.15</p>
+                </span>
+                <span class="about_right">
+                    <p>주소 : </p>
+                    <p class="about_content_bottom">서울시 중구</p>
+                </span>
+            </div>
+
+            <div class="about_container">
+                <span class="about_left">
+                    <p>연락처 : </p>
+                    <p class="about_content_bottom">010-6247-1966</p>
+                </span>
+                <span class="about_right">
+                    <p>이메일 : </p>
+                    <p class="about_content_bottom">ehqhddl123@naver.com</p>
+                </span>
+                <span class="about_right">
+                    <p class="about_content_bottom">주소 : </p>
+                    <p class="about_content_bottom">서울시 중구</p>
+                </span>
+            </div>
         </div>
     </div>
 
@@ -115,7 +119,7 @@
             <div class="item">
                 <!-- <img src="assets/sc-1.jpg"> -->
                 <div class="info">
-                    <h4>Portfolio #1</h4>
+                    <h4>포트폴리오 #1</h4>
                     <h3>오뚜기사이트 리뉴얼</h3>
                     <a href="http://ehqhddl123.dothome.co.kr/index.html" target="_blank" rel="noreferrer noopener">
                         <img src="./assets/ottugi.PNG" alt="">
@@ -126,14 +130,13 @@
                     <p>3명</p>
                     <p class="portfolio_semi_title">프로젝트 설명 : </p>
                     <p>오뚜기사이트 리뉴얼 및 퍼블리싱</p>
-                    <a href="http://ehqhddl123.dothome.co.kr/index.html" target="_blank" rel="noreferrer noopener">사이트
-                        보러가기</i></a>
+                    <!-- <a href="http://ehqhddl123.dothome.co.kr/index.html" target="_blank" rel="noreferrer noopener"></a> -->
                 </div>
             </div>
             <div class="item">
                 <!-- <img src="assets/sc-2.jpg"> -->
                 <div class="info">
-                    <h4>Portfolio #2</h4>
+                    <h4>포트폴리오 #2</h4>
                     <h3>레고 쇼핑몰 리뉴얼</h3>
                     <a href="https://lego-54e1a.web.app" target="_blank" rel="noreferrer noopener">
                         <img src="./assets/lego.PNG" alt="">
@@ -145,13 +148,13 @@
                     <p class="portfolio_semi_title">프로젝트 설명 : </p>
                     <p>PWA로 하이브리드 웹앱 구현</p>
                     <p>Vuex 활용해서 장바구니 구현</p>
-                    <a href="https://lego-54e1a.web.app" target="_blank" rel="noreferrer noopener">사이트 보러가기</i></a>
+                    <!-- <a href="https://lego-54e1a.web.app" target="_blank" rel="noreferrer noopener"></a> -->
                 </div>
             </div>
             <div class="item">
                 <!-- <img src="assets/sc-3.jpg"> -->
                 <div class="info">
-                    <h4>Portfolio #3</h4>
+                    <h4>포트폴리오 #3</h4>
                     <h3>해외축구 정보 사이트</h3>
                     <a href="https://reactproject-416508.web.app" target="_blank" rel="noreferrer noopener">
                         <img src="./assets/fifa.PNG" alt="">
@@ -163,8 +166,7 @@
                     <p class="portfolio_semi_title">프로젝트 설명 : </p>
                     <p>각종 API 사용해서 축구경기 정보 가져옴</p>
                     <p>firebase 사용해서 로그인, 게시판 기능 구현</p>
-                    <a href="https://reactproject-416508.web.app" target="_blank" rel="noreferrer noopener">사이트
-                        보러가기</i></a>
+                    <!-- <a href="https://reactproject-416508.web.app" target="_blank" rel="noreferrer noopener"></a> -->
                 </div>
             </div>
         </div>
