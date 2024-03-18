@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/448b709621.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&family=Stylish&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Leedohyun's Profile</title>
 </head>
 
 <body>
-    
     <nav>
+        <h1><a href="#main">Leedh's portfolio</a></h1>
         <ul>
             <li><a href="#main">Home</a></li>
             <li><a href="#skills">My Skills</a></li>
@@ -20,14 +23,13 @@
         </ul>
         <!-- <button>Contact Me</button> -->
         <button id="menuButton" onclick="openMenu()">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"> MENU</i>
         </button>
     </nav>
 
     <div class="main" id="main">
         <div class="left">
-            <h5>Hello, I'm dohyun</h5>
-            <h3>I create <span>product design</span> and brand experience</h3>
+            <h3>I am <span>웹 개발자</span> 이도현</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                 tristique.
@@ -35,41 +37,51 @@
             <button>Get In Touch</button>
         </div>
         <div class="right">
-            <img src="assets/fi.png">
+            <img src="assets/fi.png" alt="">
         </div>
     </div>
 
     <div class="skills" id="skills">
-        <h5>My Skills</h5>
-        <h3>My Expertise</h3>
+        <h3>My Skills</h3>
         <div class="skill-items">
             <div class="item">
-                <div class="icon"><i class='bx bx-directions'></i></div>
-                <h4>Strategy & Direction</h4>
+                <div class="icon">
+                    <img src="./assets/html.svg" alt="">
+                    <img src="./assets/css.svg" alt="">
+                    <img src="./assets/js.png" alt="">
+                </div>
+                <h4>능숙히 사용하는</h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                     tristique.
                 </p>
             </div>
             <div class="item">
-                <div class="icon"><i class='bx bx-bookmark-heart'></i></div>
-                <h4>Branding & Logo</h4>
+                <div class="icon">
+                    <img src="./assets/vue.png" alt="">
+                    <img src="./assets/react.svg" alt="">
+                    <img class="img2" src="./assets/jquery.png" alt="">
+                    <img class="img2" src="./assets/firebase.svg" alt="">
+                </div>
+                <h4>능숙하진 않지만</h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                     tristique.
                 </p>
             </div>
-            <div class="item">
+            <!-- <div class="item">
                 <div class="icon"><i class='bx bxl-figma'></i></i></div>
-                <h4>UI & UX Design</h4>
+                <h4>사용해봤지만</h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                     tristique.
                 </p>
-            </div>
+            </div> -->
             <div class="item">
-                <div class="icon"><i class='bx bx-code-alt'></i></i></div>
-                <h4>Webflow Coding</h4>
+                <div class="icon">
+                    <img src="./assets/next.png" alt="">
+                </div>
+                <h4>배워보고 싶은</h4>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
                     tristique.
@@ -80,7 +92,6 @@
 
     <div class="about" id="about">
         <div class="right">
-            <h5>About</h5>
             <h3>About Me</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce varius faucibus massa sollicitudin amet
@@ -97,43 +108,66 @@
     <div class="portfolio" id="portfolio">
         <div class="header">
             <div class="info">
-                <h5>Recent Projects</h5>
                 <h3>My Portfolio</h3>
             </div>
         </div>
-
         <div class="portfo-items">
             <div class="item">
                 <!-- <img src="assets/sc-1.jpg"> -->
                 <div class="info">
-                    <h4>Portfolio #3</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
-                    </p>
-                    <a href="#">View in Youtube <i class='bx bx-link-external'></i></a>
+                    <h4>Portfolio #1</h4>
+                    <h3>오뚜기사이트 리뉴얼</h3>
+                    <a href="http://ehqhddl123.dothome.co.kr/index.html" target="_blank" rel="noreferrer noopener">
+                        <img src="./assets/ottugi.PNG" alt="">
+                    </a>
+                    <p class="portfolio_semi_title">사용언어 및 도구: </p>
+                    <p>HTML, CSS, JAVASCRIPT, JQuery, git</p>
+                    <p class="portfolio_semi_title">프로젝트 인원 :</p>
+                    <p>3명</p>
+                    <p class="portfolio_semi_title">프로젝트 설명 : </p>
+                    <p>오뚜기사이트 리뉴얼 및 퍼블리싱</p>
+                    <a href="http://ehqhddl123.dothome.co.kr/index.html" target="_blank" rel="noreferrer noopener">사이트
+                        보러가기</i></a>
                 </div>
             </div>
             <div class="item">
                 <!-- <img src="assets/sc-2.jpg"> -->
                 <div class="info">
-                    <h4>Simple Blog Page</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
-                    </p>
-                    <a href="#">View in Youtube <i class='bx bx-link-external'></i></a>
+                    <h4>Portfolio #2</h4>
+                    <h3>레고 쇼핑몰 리뉴얼</h3>
+                    <a href="https://lego-54e1a.web.app" target="_blank" rel="noreferrer noopener">
+                        <img src="./assets/lego.PNG" alt="">
+                    </a>
+                    <p class="portfolio_semi_title">사용언어 및 도구: </p>
+                    <p>HTML, CSS, JAVASCRIPT, VUE, git</p>
+                    <p class="portfolio_semi_title">프로젝트 인원 :</p>
+                    <p>1명</p>
+                    <p class="portfolio_semi_title">프로젝트 설명 : </p>
+                    <p>PWA로 하이브리드 웹앱 구현</p>
+                    <p>Vuex 활용해서 장바구니 구현</p>
+                    <a href="https://lego-54e1a.web.app" target="_blank" rel="noreferrer noopener">사이트 보러가기</i></a>
                 </div>
             </div>
             <div class="item">
                 <!-- <img src="assets/sc-3.jpg"> -->
                 <div class="info">
-                    <h4>Animated Nav</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.
-                    </p>
+                    <h4>Portfolio #3</h4>
+                    <h3>해외축구 정보 사이트</h3>
+                    <a href="https://reactproject-416508.web.app" target="_blank" rel="noreferrer noopener">
+                        <img src="./assets/fifa.PNG" alt="">
+                    </a>
+                    <p class="portfolio_semi_title">사용언어 및 도구: </p>
+                    <p>HTML, CSS, JAVASCRIPT, REACT, FIREBASE, git</p>
+                    <p class="portfolio_semi_title">프로젝트 인원 :</p>
+                    <p>1명</p>
+                    <p class="portfolio_semi_title">프로젝트 설명 : </p>
+                    <p>각종 API 사용해서 축구경기 정보 가져옴</p>
+                    <p>firebase 사용해서 로그인, 게시판 기능 구현</p>
+                    <a href="https://reactproject-416508.web.app" target="_blank" rel="noreferrer noopener">사이트
+                        보러가기</i></a>
                 </div>
             </div>
         </div>
-
     </div>
 
     <footer>
@@ -143,10 +177,6 @@
                 <li><a href="#">Contact</a></li>
                 <li><a href="#">Projects</a></li>
             </ul>
-            <!-- <div class="social-links">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </div> -->
         </div>
         <div class="separator"></div>
     </footer>
