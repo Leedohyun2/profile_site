@@ -545,6 +545,10 @@ footer .top ul li a {
         justify-content: center;
     }
 
+    .info h3 {
+        font-size: 24px;
+    }
+
     .portfolio .portfo-items {
         gap: 22px;
         flex-wrap: wrap;
@@ -553,6 +557,10 @@ footer .top ul li a {
 
     .portfolio .portfo-items .item {
         width: 48%;
+    }
+
+    .portfolio .portfo-items .item .info p {
+        font-size: 16px;
     }
 
     .feedback .customers {
@@ -616,6 +624,7 @@ footer .top ul li a {
 
     .icon .img2 {
         width: 80px;
+        height: 40px;
     }
 
     .about {
