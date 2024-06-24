@@ -696,4 +696,8 @@ footer .top ul li a {
         width: 100%;
     }
 
+    .skills .skill-items .item .icon {
+        flex-wrap: wrap;
+    }
+
 }
