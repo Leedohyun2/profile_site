@@ -259,6 +259,11 @@ nav button#menuButton {
     margin-bottom: 15px;
 }
 
+.persent p img {
+    width: 120px;
+    height: 40px;
+}
+
 .item h4 {
     margin: 15px 0 20px 0;
 }
