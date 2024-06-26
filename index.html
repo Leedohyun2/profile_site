@@ -1,77 +1,159 @@
 <!DOCTYPE html>
 <html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/448b709621.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="assets/lee.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbit&family=Stylish&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/448b709621.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/448b709621.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="icon" href="assets/lee.png">
-    <link href="https://fonts.googleapis.com/css2?family=Orbit&family=Stylish&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/448b709621.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
     <title>Leedohyun's Profile</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <h1><a href="#main">Leedh's portfolio</a></h1>
-        <ul>
-            <li><a href="#main">Home</a></li>
-            <li><a href="#skills">My Skills</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">My Portfolio</a></li>
-        </ul>
-        <button id="menuButton" onclick="openMenu()">
-            <i class="fa-solid fa-bars"> MENU</i>
-        </button>
+      <h1><a href="#main">Leedh's portfolio</a></h1>
+      <ul>
+        <li><a href="#main">Home</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#portfolio">My Portfolio</a></li>
+      </ul>
+      <button id="menuButton" onclick="openMenu()">
+        <i class="fa-solid fa-bars"> MENU</i>
+      </button>
     </nav>
 
     <div class="main" id="main">
-        <div class="left">
-            <h3>Im <span>웹 개발자</span> 이도현</h3>
-            <p>
-                "팀원들과의 협업을 통해, 더 나은 코드를 구현합니다."
-            </p>
-            <p>
-                "사용자의 입장에서 생각하여 직관적이고 효율적인 디자인을 구현합니다."
-            </p>
-            <!-- <p>
+      <div class="left">
+        <h3>Im <span>웹 개발자</span> 이도현</h3>
+        <p>"팀원들과의 협업을 통해, 더 나은 코드를 구현합니다."</p>
+        <p>
+          "사용자의 입장에서 생각하여 직관적이고 효율적인 디자인을 구현합니다."
+        </p>
+        <!-- <p>
                 "진정성 있는 발전으로 꾸준히 성장하는 개발자입니다."
             </p> -->
+      </div>
+      <!-- 이미지 -->
+      <div class="right">
+        <img src="assets/lee_img.jpg" alt="" />
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <div class="right">
+        <h3>About Me</h3>
+        <div class="about_container">
+          <span class="about_left">
+            <p class="about_content_top">
+              <i class="fa-solid fa-user"></i>이름 :
+            </p>
+            <p class="about_content_bottom">이도현</p>
+          </span>
+          <span class="about_left">
+            <p class="about_content_top">
+              <i class="fa-regular fa-calendar"></i>생년월일 :
+            </p>
+            <p class="about_content_bottom">97.07.15</p>
+          </span>
+          <span class="about_right">
+            <p class="about_content_top">
+              <i class="fa-solid fa-location-dot"></i>주소 :
+            </p>
+            <p class="about_content_bottom">서울시 중구 신당동</p>
+          </span>
         </div>
-        <!-- 이미지 -->
-        <div class="right">
-            <img src="assets/lee_img.jpg" alt="">
+
+        <div class="about_container">
+          <span class="about_left">
+            <p class="about_content_top">
+              <i class="fa-solid fa-phone"></i>연락처 :
+            </p>
+            <p class="about_content_bottom">010-6247-1966</p>
+          </span>
+          <span class="about_right">
+            <p class="about_content_top">
+              <i class="fa-regular fa-envelope"></i>이메일 :
+            </p>
+            <p class="about_content_bottom">ehqhddl123@naver.com</p>
+          </span>
+          <span class="about_right">
+            <p class="about_content_top">
+              <i class="fa-brands fa-github"></i>깃허브 주소 :
+            </p>
+            <p class="about_content_bottom">
+              <a
+                href="https://github.com/Leedohyun2"
+                target="_blank"
+                rel="noreferrer noopener"
+                >https://github.com/Leedohyun2</a
+              >
+            </p>
+          </span>
         </div>
+      </div>
     </div>
 
     <div class="skills" id="skills">
-        <h3>My Skill</h3>
-        <div class="skill-items">
-            <div class="item">
-                <h4>능숙히 사용하는</h4>
-                <div class="persent">
-                    <p><img class="img2" src="./assets/html.svg" alt=""> : </p>
-                    <P><img class="img2" src="./assets/css.svg" alt=""> : </P>
-                    <p><img class="img2" src="./assets/js.svg" alt=""> : </p>
-                </div>
-            </div>
+      <h3>My Skill</h3>
+      <div class="skill-items">
+        <div class="item">
+          <h4>능숙히 사용하는</h4>
+          <div class="persent">
+            <p><img class="img2" src="./assets/html.svg" alt="" /> :</p>
+            <p><img class="img2" src="./assets/css.svg" alt="" /> :</p>
+            <p><img class="img2" src="./assets/js.svg" alt="" /> :</p>
+          </div>
+        </div>
 
-            <div class="item">
-                <h4>능숙하진 않지만</h4>
-                <div class="persent">
-                    <p><img class="img2" src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt=""> : </p>
-                    <p><img class="img2" src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white" alt=""> : </p>
-                    <p><img class="img2" src="./assets/react.svg" alt=""> : </p>
-                    <p><img class="img2" src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white" alt=""> :</p>
-                    <!-- <p>Firebase : </p> -->
-                    <p><img  class="img2" src="./assets/next.svg" alt=""> : </p>
-                </div>
-            </div>
+        <div class="item">
+          <h4>능숙하진 않지만</h4>
+          <div class="persent">
+            <p>
+              <img
+                class="img2"
+                src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"
+                alt=""
+              />
+              :
+            </p>
+            <p>
+              <img
+                class="img2"
+                src="https://img.shields.io/badge/vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white"
+                alt=""
+              />
+              :
+            </p>
+            <p><img class="img2" src="./assets/react.svg" alt="" /> :</p>
+            <p>
+              <img
+                class="img2"
+                src="https://img.shields.io/badge/node.js-339933?style=for-the-badge&logo=Node.js&logoColor=white"
+                alt=""
+              />
+              :
+            </p>
+            <p><img class="img2" src="./assets/next.svg" alt="" /> :</p>
+          </div>
+        </div>
 
-            <!-- <div class="item">
+        <!-- <div class="item">
                 <h4>배울 예정인</h4>
                 <div class="icon">
                     
@@ -85,154 +167,165 @@
                     <p>MySQL : </p>
                 </div>
             </div> -->
-        </div>
-    </div>
-
-    <div class="about" id="about">
-        <div class="right">
-            <h3>About Me</h3>
-            <div class="about_container">
-                <span class="about_left">
-                    <p class="about_content_top"><i class="fa-solid fa-user"></i>이름 : </p>
-                    <p class="about_content_bottom">이도현</p>
-                </span>
-                <span class="about_left">
-                    <p class="about_content_top"><i class="fa-regular fa-calendar"></i>생년월일 : </p>
-                    <p class="about_content_bottom">97.07.15</p>
-                </span>
-                <span class="about_right">
-                    <p class="about_content_top"><i class="fa-solid fa-location-dot"></i>주소 : </p>
-                    <p class="about_content_bottom">서울시 중구 신당동</p>
-                </span>
-            </div>
-
-            <div class="about_container">
-                <span class="about_left">
-                    <p class="about_content_top"><i class="fa-solid fa-phone"></i>연락처 : </p>
-                    <p class="about_content_bottom">010-6247-1966</p>
-                </span>
-                <span class="about_right">
-                    <p class="about_content_top"><i class="fa-regular fa-envelope"></i>이메일 : </p>
-                    <p class="about_content_bottom">ehqhddl123@naver.com</p>
-                </span>
-                <span class="about_right">
-                    <p class="about_content_top"><i class="fa-brands fa-github"></i>깃허브 주소 : </p>
-                    <p class="about_content_bottom"><a href="https://github.com/Leedohyun2" target="_blank"
-                            rel="noreferrer noopener">https://github.com/Leedohyun2</a></p>
-                </span>
-            </div>
-        </div>
+      </div>
     </div>
 
     <div class="portfolio" id="portfolio">
-        <div class="header">
+      <div class="header">
+        <div class="info">
+          <h3>My Portfolio</h3>
+        </div>
+      </div>
+
+      <swiper-container class="mySwiper" navigation="true">
+        <swiper-slide
+          ><div class="item">
             <div class="info">
-                <h3>My Portfolio</h3>
+              <h4>Portfolio #1</h4>
+              <h3>오뚜기 사이트 리뉴얼</h3>
+              <a
+                href="https://leedohyun2.github.io/ottugi_final/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="./assets/ottugi.PNG" alt="" />
+              </a>
+              <p class="portfolio_semi_title">사용언어 및 도구:</p>
+              <p>HTML, CSS, JAVASCRIPT, JQuery, GIT</p>
+              <p class="portfolio_semi_title">프로젝트 인원 :</p>
+              <p>3명(메인 페이지, 오시는 길 페이지 담당)</p>
+              <p class="portfolio_semi_title">프로젝트 설명 :</p>
+              <p>오뚜기사이트 리뉴얼 및 퍼블리싱</p>
+              <p>모바일, 태블릿, PC 세가지 버전 반응형 구현</p>
+              <p class="portfolio_semi_title">
+                <a
+                  href="https://leedohyun2.github.io/ottugi_final/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  프로젝트 주소
+                </a>
+              </p>
+              <p class="portfolio_semi_title">
+                <a
+                  href="https://docs.google.com/presentation/d/1BAu99AXfCvTYWtT_cmxunIzEkXFSEydl/edit#slide=id.p1"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  프로젝트 기획서 주소
+                </a>
+              </p>
             </div>
-        </div>
-        <div class="portfo-items">
-            <div class="item">
-                <!-- <img src="assets/sc-1.jpg"> -->
-                <div class="info">
-                    <h4>포트폴리오 #1</h4>
-                    <h3>오뚜기 사이트 리뉴얼</h3>
-                    <a href="https://leedohyun2.github.io/ottugi_final/" target="_blank" rel="noreferrer noopener">
-                        <img src="./assets/ottugi.PNG" alt="">
-                    </a>
-                    <p class="portfolio_semi_title">사용언어 및 도구: </p>
-                    <p>HTML, CSS, JAVASCRIPT, JQuery, GIT</p>
-                    <p class="portfolio_semi_title">프로젝트 인원 :</p>
-                    <p>3명(메인 페이지, 오시는 길 페이지 담당)</p>
-                    <p class="portfolio_semi_title">프로젝트 설명 : </p>
-                    <p>오뚜기사이트 리뉴얼 및 퍼블리싱</p>
-                    <p>모바일, 태블릿, PC 세가지 버전 반응형 구현</p>
-                    <p class="portfolio_semi_title">
-                        <a href="http://ehqhddl123.dothome.co.kr/index.html"
-                            target="_blank" rel="noreferrer noopener">
-                            프로젝트 주소
-                        </a>
-                    </p>
-                    <p class="portfolio_semi_title">
-                        <a href="https://docs.google.com/presentation/d/1BAu99AXfCvTYWtT_cmxunIzEkXFSEydl/edit#slide=id.p1"
-                            target="_blank" rel="noreferrer noopener">
-                            프로젝트 기획서 주소
-                        </a>
-                    </p>
-                </div>
+          </div></swiper-slide
+        >
+        <swiper-slide
+          ><div class="item">
+            <div class="info">
+              <h4>Portfolio #2</h4>
+              <h3>레고 쇼핑몰 리뉴얼</h3>
+              <a
+                href="https://lego-54e1a.web.app"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="./assets/lego.PNG" alt="" />
+              </a>
+              <p class="portfolio_semi_title">사용언어 및 도구:</p>
+              <p>HTML, CSS, JAVASCRIPT, VUE, GIT</p>
+              <p class="portfolio_semi_title">프로젝트 인원 :</p>
+              <p>1명</p>
+              <p class="portfolio_semi_title">프로젝트 설명 :</p>
+              <p>모바일, PC 버전의 반응형웹 구현</p>
+              <p>PWA로 하이브리드 웹앱 구현</p>
+              <p>Vuex 활용해서 장바구니 구현</p>
+              <p class="portfolio_semi_title">
+                <a
+                  href="https://lego-54e1a.web.app"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  프로젝트 주소
+                </a>
+              </p>
+              <p class="portfolio_semi_title">
+                <a
+                  href="https://docs.google.com/presentation/d/16E1KZLW4ltAmjkmF0nqxcFYlZ3dTrV8rBmIKCfFCHAg/edit#slide=id.p"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  프로젝트 기획서 주소
+                </a>
+              </p>
             </div>
-            <div class="item">
-                <div class="info">
-                    <h4>포트폴리오 #2</h4>
-                    <h3>레고 쇼핑몰 리뉴얼</h3>
-                    <a href="https://lego-54e1a.web.app" target="_blank" rel="noreferrer noopener">
-                        <img src="./assets/lego.PNG" alt="">
-                    </a>
-                    <p class="portfolio_semi_title">사용언어 및 도구: </p>
-                    <p>HTML, CSS, JAVASCRIPT, VUE, GIT</p>
-                    <p class="portfolio_semi_title">프로젝트 인원 :</p>
-                    <p>1명</p>
-                    <p class="portfolio_semi_title">프로젝트 설명 : </p>
-                    <p>모바일, PC 버전의 반응형웹 구현</p>
-                    <p>PWA로 하이브리드 웹앱 구현</p>
-                    <p>Vuex 활용해서 장바구니 구현</p>
-                    <p class="portfolio_semi_title">
-                        <a href="https://lego-54e1a.web.app"
-                            target="_blank" rel="noreferrer noopener">
-                            프로젝트 주소
-                        </a>
-                    </p>
-                    <p class="portfolio_semi_title">
-                        <a href="https://docs.google.com/presentation/d/16E1KZLW4ltAmjkmF0nqxcFYlZ3dTrV8rBmIKCfFCHAg/edit#slide=id.p"
-                            target="_blank" rel="noreferrer noopener">
-                            프로젝트 기획서 주소
-                        </a>
-                    </p>
-                </div>
+          </div></swiper-slide
+        >
+        <swiper-slide>
+          <div class="item">
+            <!-- <img src="assets/sc-3.jpg"> -->
+            <div class="info">
+              <h4>Portfolio #3</h4>
+              <h3>해외축구 웹사이트</h3>
+              <a
+                href="https://reactproject-416508.web.app"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <img src="./assets/fifa.PNG" alt="" />
+              </a>
+              <p class="portfolio_semi_title">사용언어 및 도구:</p>
+              <p>HTML, CSS, JAVASCRIPT, REACT, FIREBASE, GIT</p>
+              <p class="portfolio_semi_title">프로젝트 인원 :</p>
+              <p>1명</p>
+              <p class="portfolio_semi_title">프로젝트 설명 :</p>
+              <p>
+                각종 API 사용해서 축구경기 정보 보여줌(카카오API, 유튜브API,
+                해외축구API)
+              </p>
+              <p>React, Firebase 사용해서 로그인, 게시판 기능 구현</p>
+              <p class="portfolio_semi_title">
+                <a
+                  href="https://reactproject-416508.web.app"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  프로젝트 주소
+                </a>
+              </p>
+              <p class="portfolio_semi_title">
+                <a
+                  href="https://docs.google.com/presentation/d/1dmmXw3VRXNZfejXuzhEgti3s_8-Tq6xXVkt9aHKO4kA/edit#slide=id.p
+                            "
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  프로젝트 기획서 주소
+                </a>
+              </p>
             </div>
-            <div class="item">
-                <!-- <img src="assets/sc-3.jpg"> -->
-                <div class="info">
-                    <h4>포트폴리오 #3</h4>
-                    <h3>해외축구 웹사이트</h3>
-                    <a href="https://reactproject-416508.web.app" target="_blank" rel="noreferrer noopener">
-                        <img src="./assets/fifa.PNG" alt="">
-                    </a>
-                    <p class="portfolio_semi_title">사용언어 및 도구: </p>
-                    <p>HTML, CSS, JAVASCRIPT, REACT, FIREBASE, GIT</p>
-                    <p class="portfolio_semi_title">프로젝트 인원 :</p>
-                    <p>1명</p>
-                    <p class="portfolio_semi_title">프로젝트 설명 : </p>
-                    <p>각종 API 사용해서 축구경기 정보 보여줌(카카오API, 유튜브API, 해외축구API)</p>
-                    <p>React, Firebase 사용해서 로그인, 게시판 기능 구현</p>
-                    <p class="portfolio_semi_title">
-                        <a href="https://reactproject-416508.web.app"
-                            target="_blank" rel="noreferrer noopener">
-                            프로젝트 주소
-                        </a>
-                    </p>
-                    <p class="portfolio_semi_title">
-                        <a href="https://docs.google.com/presentation/d/1dmmXw3VRXNZfejXuzhEgti3s_8-Tq6xXVkt9aHKO4kA/edit#slide=id.p
-                            " target="_blank" rel="noreferrer noopener">
-                            프로젝트 기획서 주소
-                        </a>
-                    </p>
-                </div>
-            </div>
-        </div>
+          </div></swiper-slide
+        >
+      </swiper-container>
     </div>
 
     <footer>
-        <div class="top">
-            <ul>
-                <li><a href="#none"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#none"><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://github.com/Leedohyun2"><i class="fa-brands fa-github"></i></a></li>
-            </ul>
-        </div>
-        <div class="separator"></div>
+      <div class="top">
+        <ul>
+          <li>
+            <a href="#none"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+          <li>
+            <a href="#none"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://github.com/Leedohyun2"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="separator"></div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
