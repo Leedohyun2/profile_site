@@ -275,7 +275,7 @@ nav button#menuButton {
 }
 
 .item h4 {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .about {
@@ -490,10 +490,10 @@ swiper-container {
 }
 
 swiper-slide {
-  padding: 20px;
+  padding: 20px 0;
   margin: 30px 0;
   text-align: center;
-  font-size: 18px;
+  font-size: 17px;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -506,7 +506,7 @@ swiper-slide img {
   width: 65%;
   border: 4px solid #99bc85;
   border-radius: 40px;
-  margin: 25px 0;
+  margin: 15px 0;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
   object-fit: cover;
 }
