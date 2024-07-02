@@ -577,10 +577,6 @@ swiper-slide img:hover {
     gap: 20px;
   }
 
-  nav ul li a {
-    font-size: 15px;
-  }
-
   .main {
     flex-direction: column;
   }
@@ -639,6 +635,10 @@ swiper-slide img:hover {
     padding: 0 42px;
   }
 
+  nav ul li a {
+    font-size: 15px;
+  }
+
   nav h1 a {
     font-size: 20px;
   }
@@ -684,6 +684,10 @@ swiper-slide img:hover {
     margin-bottom: 30px;
   }
 
+  .persent p {
+    font-size: 18px;
+  }
+
   .persent p img {
     width: 90px;
     height: 30px;
@@ -713,7 +717,7 @@ swiper-slide img:hover {
 
 @media screen and (max-width: 576px) {
   nav ul li a {
-    font-size: 13px;
+    font-size: 15px;
   }
 
   nav .logo a {
@@ -724,6 +728,10 @@ swiper-slide img:hover {
     padding: 0 20px;
   }
 
+  .fa-solid, .fas {
+    font-size: 16px;
+  }
+  
   .main .left h3 {
     font-size: 32px;
   }
@@ -735,10 +743,6 @@ swiper-slide img:hover {
   .main .left button {
     width: 100%;
   }
-
-  /* .fa-bars:before, .fa-navicon:before {
-    content: none;
-  } */
 
   .skills .skill-items .item {
     width: 100%;
