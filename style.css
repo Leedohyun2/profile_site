@@ -765,3 +765,58 @@ swiper-slide img:hover {
     flex-wrap: wrap;
   }
 }
+
+/* 둥둥 떠다니는 효과 */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px;
+  background: url('./assets/3497263.jpg') no-repeat center center; 
+  background-size: cover; 
+  min-height: 600px; 
+  position: relative;
+}
+
+.main .left h3 {
+  animation: float 4s ease-in-out infinite;
+  color: #000; 
+}
+
+.main .left p {
+  animation: float 6s ease-in-out infinite;
+  color: #000; 
+}
+
+.main .left h3 {
+  font-size: 46px;
+  font-weight: bold;
+}
+
+.main .left p {
+  font-size: 22px;
+  margin-top: 10px;
+}
+
+.main .right img {
+  width: 350px;
+  border-radius: 50%;
+  border: 4px solid #99bc85;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  animation: float 5s ease-in-out infinite;
+}
+
+
+
