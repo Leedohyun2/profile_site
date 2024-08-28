@@ -149,6 +149,23 @@ nav button#menuButton {
   border-radius: 5px;
 }
 
+/* 스크롤 효과 */
+.scroll-container {
+  position: fixed;
+  top: 50%;
+  left: -200px;
+  width: 120%;
+  text-align: left;
+  overflow: hidden;
+}
+
+.scroll-text {
+  position: relative;
+  font-size: 2em;
+  white-space: nowrap;
+}
+
+/* 어바웃 */
 .about_container {
   margin-top: 30px;
   display: flex;
