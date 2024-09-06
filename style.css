@@ -374,6 +374,10 @@ nav button#menuButton {
   padding: 20px 32px 42px;
 }
 
+/* .info {
+  display: flex;
+} */
+
 .portfolio .portfo-items .item .info p {
   font-size: 19px;
 }
